@@ -1,19 +1,60 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2023 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+:root {
+  --clr-primary: #B5A1E5;
+  --clr-primary-on: #100E17; 
+  --clr-background: #131214;
+  --clr-background-on: #EAE6F2;
+  --clr-surface: #1D1C1F;
+  --clr-surface-on: #DDDAE5;
+  --clr-surgace-variant: #7B7980;
+  --clr-surface-variatn-2: #B9B6BF;
+  --clr-outline: #3E3D40;
+  --clr-aqi-1: #89E589;
+  --clr-on-bg-aqi-1: #1F331F;
+  --clr-bg-aqi-2: #33311F;
+  --clr-aqi-3: #E5C089;
+  --clr-on-bg-aqi-3: #332B1F;
+  --clr-aqi-4: #E58989;
+  --clr-on-bg-aqi-4: #331F1F;
+  --clr-bg-aqi-5: #E589B7;
+  --clr-on-bg-aqi-5: #331F29;
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-white-alpha-4:  hsla(0, 0%, 100%, 0.04);
+  --clr-white-alpha-8: hsla(0, 0%, 100%, 0.08);
+  --clr-black-alpha-10: hsla(0, 0%, 0%, 0.1);
+
+  --gradient-1: linear-gradient(180deg, hsla(270, 5%, 7%, 0) 0%, hsla(270, 5%, 7%, 0.8) 65%, hsl(270, 5%, 7%) 100%);
+  --gradient-2: linear-gradient(180deg, hsla(260, 5%, 12%, 0) 0%, hsla(260, 5%, 12%, 0.8) 65%, hsl(260, 5%, 12%) 100%);
+
+  --shadow-1: 0px 1px 3px hsla(0, 0%, 0%, 0.5);
+  --shadow-2: 0px 3px 6px hsla(0, 0%, 0%, 0.4);
+
+  --ff-primary: 'Nunito Sans', sans-serif;
+
+  --fs-label-1: 1.125rem
+  --fs-label-2: 1.375rem;
+  --fs-body-3: 1.5625rem;
+  --fs-body-2: 2rem;
+  --fs-body-1: 2.2rem;
+  --fs-title-3: 1.6rem;
+  --fs-title-2: 1.8rem;
+  --fs-title-1: 2.1rem;
+  --fs-heading: 5.6rem;
+
+  --fw-regular: 400:
+  --fw-semiBold: 600;
+
+  --radius-16: 1rem;
+  --radius-28: 1.75rem;
+  --radius-pill: 31.25rem;
+  --radius-cirlce: 50%;
+
+  --transition-short: 100ms ease;
+}
 
 
 
