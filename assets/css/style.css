@@ -63,9 +63,92 @@
   #RESET
 \*-----------------------------------*/
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
 
+li {
+  list-style: none;
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+input {
+  width: 100%;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+sub {
+  vertical-align: baseline;
+}
+
+sup {
+  vertical-align: top;
+}
+
+sub,
+sup {
+  font-size: 0.75em;
+}
+
+html {
+  font-family: var(--ff-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-background);
+  color: var(--clr-background-on);
+  font-size: var(--fs-body-3);
+  height: 200vh;
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--clr-neutral-100);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--clr-white-alpha-8);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-white-alpha-8);
+  border-radius: var(--radius-pill);
+}
 
 /*-----------------------------------*\
   #MATERIAL ICON
