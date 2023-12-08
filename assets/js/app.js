@@ -6,8 +6,8 @@
 
 'use strict';
 
-import { fetchData, url } from "./api";
-import * as module from "./module";
+import { fetchData, url } from "./api.js";
+import * as module from "./module.js";
 
 /**
  * Add event listener on multiple elements

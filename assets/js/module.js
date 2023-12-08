@@ -33,7 +33,7 @@ export const monthNames = [
 ];
 
 /**
- * 
+ *
  * @param {number} dataUnix Unix date in seconds
  * @param {number} timezone Timezone shift from UTC in seconds
  * @returns {string} Date String. formate: "Sunday 10, Jan"
@@ -54,12 +54,13 @@ export const getDate = function (dataUnix, timezone) {
  * @returns {string} Time string. formate: "HH AM/PM"
  */
 
-export const getHours = function (timeUnix, timezone) {
+export const getTime = function (timeUnix, timezone) {
     const date = new Date((timeUnix + timezone) * 1000);
     const hours = date.getUTCHours();
-    const period = hours ≥ 12 ? "PM" : "AM";
+    const minutes = data.getUTCMinutes();
+    const period = hours >= 12 ? "PM" : "AM";
 
-    return '${hours % 12 || 12} ${period}';
+    return '${hours % 12 || 12}:${minutes} ${period}';
 }
 
 /**
@@ -67,7 +68,7 @@ export const getHours = function (timeUnix, timezone) {
  * @returns {number} Kilometer per hours
  */
 
-export const mps_to_kmh = => {
+export const mps_to_kmh = mps => {
     const mpn = mps * 3600;
     return mpn / 1000;
 }
